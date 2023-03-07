@@ -1,4 +1,4 @@
-package ass1;
+package Lab05;
 /* Copyright material for students taking COMP-2800 to work on assignment/labs/projects. */
 
 import java.awt.BorderLayout; 
@@ -78,6 +78,16 @@ public class CommonsHN extends JPanel {
 		return rot_beh;
 	}
 	
+//	public static RotationInterpolator rotate_Blade(int r_num, TransformGroup rotTG) {
+//	
+//		rotTG.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);
+//		Transform3D xAxis = new Transform3D();
+//		xAxis.rotZ(Math.PI/2);
+//		Alpha rotationAlpha = new Alpha(-1, r_num+1000);
+//		RotationInterpolator rot_beh = new RotationInterpolator(rotationAlpha, rotTG, xAxis, 0.0f, (float) Math.PI * 2.0f);
+//		rot_beh.setSchedulingBounds(hundredBS);
+//		return rot_beh;
+//	}
 	/* a function to place one light or two lights at opposite locations */
 	public static BranchGroup add_Lights(Color3f clr, int p_num) {
 		BranchGroup lightBG = new BranchGroup();
